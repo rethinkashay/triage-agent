@@ -1,0 +1,27 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.egg
+.Python
+env/
+venv/
+.venv/
+.env
+.env.local
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+# IDEs
+.vscode/
+.idea/
+# Data 
+data/
+models/
+downloads/
+# Database
+*.sqlite3
+# Logs
+*.log

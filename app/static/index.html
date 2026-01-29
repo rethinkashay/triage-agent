@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Triage Agent — Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #020617;
+      --card: #020617;
+      --border: #1e293b;
+      --accent: #2563eb;
+      --accent-soft: #1d4ed8;
+      --danger: #ef4444;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --chip-bg: #111827;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 40px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #1f2937 0, #020617 60%, #000 100%);
+      color: var(--text);
+    }
+    .shell {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin: 0 0 4px;
+      letter-spacing: 0.02em;
+    }
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr);
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: minmax(0, 1fr); }
+    }
+    .card {
+      background: linear-gradient(145deg, #020617 0, #020617 40%, #020617 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px 18px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      gap: 8px;
+    }
+    .card-title {
+      font-weight: 600;
+      font-size: 0.98rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9ca3af;
+    }
+    .badge {
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      background: #020617;
+      border: 1px solid #1f2937;
+      color: var(--muted);
+    }
+    label {
+      display: block;
+      margin: 6px 0 4px;
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: #d1d5db;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 9px 10px;
+      border-radius: 10px;
+      border: 1px solid #1f2937;
+      background: rgba(15, 23, 42, 0.85);
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      resize: vertical;
+    }
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.5);
+    }
+    textarea { min-height: 110px; }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 9px 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.08s ease;
+    }
+    button:active { transform: translateY(1px) scale(0.99); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent) 0, var(--accent-soft) 100%);
+      color: white;
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.4);
+    }
+    .btn-secondary {
+      background: #111827;
+      color: var(--muted);
+      border: 1px solid #1f2937;
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--muted);
+      border: 1px dashed #374151;
+      padding-inline: 10px;
+    }
+
+    .hint {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+    .hint code {
+      font-size: 0.8rem;
+      background: #020617;
+      padding: 3px 6px;
+      border-radius: 6px;
+      border: 1px solid #1f2937;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background: var(--chip-bg);
+      border: 1px solid #1f2937;
+      margin: 2px 4px 2px 0;
+    }
+    .pill.danger {
+      border-color: rgba(248, 113, 113, 0.7);
+      color: #fecaca;
+      background: #450a0a;
+    }
+    .pill span {
+      opacity: 0.7;
+      font-size: 0.7rem;
+      margin-right: 2px;
+    }
+
+    .summary-text {
+      font-size: 0.92rem;
+      line-height: 1.4;
+      color: #e5e7eb;
+      white-space: pre-wrap;
+    }
+    .summary-text strong { color: #f9fafb; }
+
+    .grid-small {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .metric {
+      border-radius: 12px;
+      padding: 8px 9px;
+      border: 1px solid #111827;
+      background: #020617;
+      font-size: 0.78rem;
+    }
+    .metric-label {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    .metric-value {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .section-title {
+      font-size: 0.83rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin: 12px 0 4px;
+    }
+    .evidence-item {
+      border-radius: 10px;
+      padding: 6px 8px;
+      border: 1px solid #1f2937;
+      background: #020617;
+      margin-bottom: 6px;
+      font-size: 0.8rem;
+    }
+    .evidence-doc {
+      font-weight: 500;
+      color: #cbd5f5;
+    }
+    .evidence-score {
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    pre {
+      margin: 0;
+      padding: 10px 11px;
+      border-radius: 10px;
+      background: #020617;
+      border: 1px solid #111827;
+      font-size: 0.78rem;
+      max-height: 280px;
+      overflow: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: 6px;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      margin-right: 4px;
+      background: #16a34a;
+      box-shadow: 0 0 8px rgba(22, 163, 74, 0.8);
+    }
+    .status-dot.offline {
+      background: #f97373;
+      box-shadow: 0 0 8px rgba(248, 113, 113, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header style="margin-bottom: 18px;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap;">
+        <div>
+          <h1>Triage Agent — Web UI</h1>
+          <p class="subtitle">
+            Test your triage API with an interactive dashboard. No need for curl or Postman.
+          </p>
+        </div>
+        <div class="badge">
+          <span class="status-dot"></span>
+          <span id="server-label">Server: unknown</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- LEFT: Input -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-title">Input</div>
+          <span class="badge">Endpoint: <code style="font-size:0.75rem;">POST /triage</code></span>
+        </div>
+
+        <label for="user_id">User ID</label>
+        <input id="user_id" type="text" value="u1" placeholder="e.g. u1, test-user" />
+
+        <label for="symptoms">Symptom text</label>
+        <textarea id="symptoms" placeholder="Describe the symptoms here...">I have chest pain and shortness of breath</textarea>
+
+        <div class="row">
+          <button class="btn-primary" id="btn-triage">
+            ▶ POST /triage
+          </button>
+          <button class="btn-secondary" id="btn-clear">
+            ⟲ Clear
+          </button>
+          <button class="btn-ghost" id="btn-ping">
+            GET /
+          </button>
+        </div>
+
+        <p class="hint">
+          Server URL: <code id="server-url">http://127.0.0.1:8000</code><br>
+          Tip: Change the text, hit <strong>POST /triage</strong>, and inspect the structured response on the right.
+        </p>
+      </section>
+
+      <!-- RIGHT: Output -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-title">Result</div>
+          <span class="badge" id="latency-badge">Waiting…</span>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary-text" id="summary-box">
+          No response yet. Submit a triage request to see structured output.
+        </div>
+
+        <!-- Metrics -->
+        <div class="grid-small">
+          <div class="metric">
+            <div class="metric-label">Urgency</div>
+            <div class="metric-value" id="urgency-value">—</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Red flags</div>
+            <div class="metric-value" id="redflag-count">—</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">LLM Confidence</div>
+            <div class="metric-value" id="confidence-value">—</div>
+          </div>
+        </div>
+
+        <!-- Red flags pills -->
+        <div class="section-title">Detected red flags</div>
+        <div id="redflags-container">
+          <span class="hint">None yet.</span>
+        </div>
+
+        <!-- Evidence -->
+        <div class="section-title">Evidence (RAG)</div>
+        <div id="evidence-container">
+          <span class="hint">No evidence returned.</span>
+        </div>
+
+        <!-- Raw JSON -->
+        <div class="section-title">Raw JSON</div>
+        <pre id="raw-json">No response yet.</pre>
+
+        <div class="status-bar">
+          <div>
+            <span id="status-text">Idle.</span>
+          </div>
+          <div>
+            <span style="opacity:0.6;">Last updated:</span>
+            <span id="last-updated">—</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const serverBase = "http://127.0.0.1:8000";
+    const serverUrlEl = document.getElementById("server-url");
+    const statusText = document.getElementById("status-text");
+    const lastUpdated = document.getElementById("last-updated");
+    const serverLabel = document.getElementById("server-label");
+    const statusDot = document.querySelector(".status-dot");
+    const latencyBadge = document.getElementById("latency-badge");
+
+    serverUrlEl.textContent = serverBase;
+
+    const summaryBox = document.getElementById("summary-box");
+    const urgencyValue = document.getElementById("urgency-value");
+    const redflagCount = document.getElementById("redflag-count");
+    const confidenceValue = document.getElementById("confidence-value");
+    const redflagsContainer = document.getElementById("redflags-container");
+    const evidenceContainer = document.getElementById("evidence-container");
+    const rawJsonEl = document.getElementById("raw-json");
+
+    function setServerStatus(ok) {
+      if (ok) {
+        statusDot.classList.remove("offline");
+        serverLabel.textContent = "Server: online";
+      } else {
+        statusDot.classList.add("offline");
+        serverLabel.textContent = "Server: offline";
+      }
+    }
+
+    async function pingRoot() {
+      latencyBadge.textContent = "Pinging…";
+      const t0 = performance.now();
+      try {
+        const resp = await fetch(serverBase + "/");
+        const t1 = performance.now();
+        const latency = Math.round(t1 - t0);
+        latencyBadge.textContent = latency + " ms";
+        if (resp.ok) {
+          const data = await resp.json();
+          setServerStatus(true);
+          statusText.textContent = data.message || "Root OK";
+        } else {
+          setServerStatus(false);
+          statusText.textContent = "GET / failed (" + resp.status + ")";
+        }
+      } catch (err) {
+        setServerStatus(false);
+        latencyBadge.textContent = "Error";
+        statusText.textContent = "GET / error: " + err;
+      }
+    }
+
+    function renderRedFlags(list) {
+      redflagsContainer.innerHTML = "";
+      if (!list || !list.length) {
+        redflagsContainer.innerHTML = '<span class="hint">No red flags detected.</span>';
+        redflagCount.textContent = "0";
+        return;
+      }
+      redflagCount.textContent = String(list.length);
+      for (const rf of list) {
+        const pill = document.createElement("span");
+        pill.className = "pill danger";
+        pill.textContent = rf;
+        redflagsContainer.appendChild(pill);
+      }
+    }
+
+    function renderEvidence(evidence) {
+      evidenceContainer.innerHTML = "";
+      if (!evidence || !evidence.length) {
+        evidenceContainer.innerHTML = '<span class="hint">No retrieved evidence.</span>';
+        return;
+      }
+      for (const ev of evidence) {
+        const div = document.createElement("div");
+        div.className = "evidence-item";
+        const doc = ev.doc_id || "unknown";
+        const score = ev.score != null ? Number(ev.score).toFixed(3) : "—";
+        div.innerHTML =
+          '<div class="evidence-doc">' + doc + '</div>' +
+          '<div class="evidence-score">score: ' + score + '</div>' +
+          "<div>" + (ev.text || "").slice(0, 260) + (ev.text && ev.text.length > 260 ? "…" : "") + "</div>";
+        evidenceContainer.appendChild(div);
+      }
+    }
+
+    function renderLLM(llm) {
+      if (!llm) {
+        confidenceValue.textContent = "—";
+        return;
+      }
+      const urgency = llm.urgency || llm.level || null;
+      if (urgency) urgencyValue.textContent = urgency;
+      confidenceValue.textContent = llm.confidence || "—";
+
+      const summary = llm.summary || "";
+      const recommendation = llm.recommendation || llm.recommended_action || "";
+      const disclaimer = llm.disclaimer || "";
+      let summaryText = "";
+
+      if (summary) summaryText += "Summary: " + summary + "\n";
+      if (recommendation) summaryText += "\nRecommendation: " + recommendation + "\n";
+      if (llm.reasons && Array.isArray(llm.reasons) && llm.reasons.length) {
+        summaryText += "\nReasons:\n- " + llm.reasons.join("\n- ") + "\n";
+      }
+      if (disclaimer) summaryText += "\n" + disclaimer;
+
+      if (summaryText.trim().length) {
+        summaryBox.textContent = summaryText.trim();
+      }
+    }
+
+    function renderResult(data) {
+      rawJsonEl.textContent = JSON.stringify(data, null, 2);
+
+      // default summary
+      summaryBox.textContent =
+        (data.recommended_action || "No recommendation field.") +
+        "\n\n(Text: \"" + (data.text || "") + "\")";
+
+      // red flags (top-level)
+      renderRedFlags(data.red_flags || data.redFlags);
+
+      // evidence
+      renderEvidence(data.evidence);
+
+      // LLM structured triage (if present)
+      if (data.llm_structured || data.llmStructured) {
+        const llm = data.llm_structured || data.llmStructured;
+        renderLLM(llm);
+      } else {
+        urgencyValue.textContent = data.urgency || "—";
+        confidenceValue.textContent = "—";
+      }
+
+      const now = new Date();
+      lastUpdated.textContent = now.toLocaleTimeString();
+    }
+
+    document.getElementById("btn-ping").addEventListener("click", () => {
+      pingRoot();
+    });
+
+    document.getElementById("btn-clear").addEventListener("click", () => {
+      document.getElementById("symptoms").value = "";
+      summaryBox.textContent = "Cleared. Enter new symptoms and hit POST /triage.";
+      redflagsContainer.innerHTML = '<span class="hint">None.</span>';
+      evidenceContainer.innerHTML = '<span class="hint">No evidence.</span>';
+      rawJsonEl.textContent = "No response yet.";
+      urgencyValue.textContent = "—";
+      redflagCount.textContent = "—";
+      confidenceValue.textContent = "—";
+      statusText.textContent = "Idle.";
+      latencyBadge.textContent = "Waiting…";
+      lastUpdated.textContent = "—";
+    });
+
+    document.getElementById("btn-triage").addEventListener("click", async () => {
+      const user_id = document.getElementById("user_id").value || "anon";
+      const text = document.getElementById("symptoms").value || "";
+
+      statusText.textContent = "Sending request…";
+      latencyBadge.textContent = "Running…";
+
+      const t0 = performance.now();
+      try {
+        const resp = await fetch(serverBase + "/triage", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ user_id, text })
+        });
+        const t1 = performance.now();
+        const latency = Math.round(t1 - t0);
+        latencyBadge.textContent = latency + " ms";
+
+        const data = await resp.json();
+        if (!resp.ok) {
+          statusText.textContent = "Error " + resp.status;
+          rawJsonEl.textContent = JSON.stringify(data, null, 2);
+          return;
+        }
+        statusText.textContent = "OK (" + resp.status + ")";
+        renderResult(data);
+      } catch (err) {
+        latencyBadge.textContent = "Error";
+        statusText.textContent = "POST /triage failed: " + err;
+        rawJsonEl.textContent = "Error: " + err;
+      }
+    });
+
+    // auto-ping on load
+    pingRoot();
+  </script>
+</body>
+</html>

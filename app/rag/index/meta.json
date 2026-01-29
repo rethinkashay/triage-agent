@@ -1,0 +1,436 @@
+[
+  {
+    "doc_id": "abdominal_pain.txt",
+    "chunk_id": "abdominal_pain:overview:0",
+    "condition": "abdominal_pain",
+    "section": "overview",
+    "text": "Abdominal Pain \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "abdominal_pain.txt",
+    "chunk_id": "abdominal_pain:emergency_signs:0",
+    "condition": "abdominal_pain",
+    "section": "emergency_signs",
+    "text": "- Sudden severe abdominal pain that is unbearable. - Pain with a hard, rigid abdomen. - Pain with vomiting blood or blood in stool (black or bright red). - Pain with chest pain, fainting, difficulty breathing, or severe dizziness. - Severe abdominal pain in pregnancy with bleeding, dizziness, or fainting. URGENT (see a doctor the same day): - Pain worsening steadily over several hours. - Pain with fever above 38.5\u00b0C. - Pain with persistent vomiting or inability to keep fluids down. - Pain with painful urination, flank pain, or blood in urine. ROUTINE / SELF-CARE: - Mild cramps or stomach discomfort improving with rest. - Symptoms after overeating or mild indigestion. - Mild constipation or gas without severe symptoms. GENERAL ADVICE: - Sip fluids and avoid heavy foods. - Avoid painkillers like ibuprofen if stomach pain is worsening. - Seek care sooner if pain spreads, worsens, or new symptoms appear. SAFETY DISCLAIMER: These guidelines are for information only and do not replace professional medical evaluation. For emergencies, call local emergency services."
+  },
+  {
+    "doc_id": "allergic_reaction.txt",
+    "chunk_id": "allergic_reaction:overview:0",
+    "condition": "allergic_reaction",
+    "section": "overview",
+    "text": "Allergic Reaction \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "allergic_reaction.txt",
+    "chunk_id": "allergic_reaction:emergency_signs:0",
+    "condition": "allergic_reaction",
+    "section": "emergency_signs",
+    "text": "- Difficulty breathing, wheezing, or tightness in the throat. - Swelling of lips, tongue, or face. - Widespread hives with dizziness or fainting. - Suspected anaphylaxis after food, medication, or insect sting. URGENT: - Hives spreading quickly without breathing problems. - Facial or eyelid swelling without airway involvement. - Reaction after a new medication without severe symptoms. ROUTINE: - Mild itching or localized skin rash. - Mild hives that improve with antihistamines. GENERAL ADVICE: - Avoid suspected allergen. - Antihistamines can relieve mild symptoms. - Seek urgent care if swelling or breathing issues develop. SAFETY DISCLAIMER: Not medical advice. For emergencies, call local emergency services."
+  },
+  {
+    "doc_id": "asthma_attack.txt",
+    "chunk_id": "asthma_attack:overview:0",
+    "condition": "asthma_attack",
+    "section": "overview",
+    "text": "Asthma flare-ups cause shortness of breath, chest tightness, and wheezing."
+  },
+  {
+    "doc_id": "asthma_attack.txt",
+    "chunk_id": "asthma_attack:emergency_signs:0",
+    "condition": "asthma_attack",
+    "section": "emergency_signs",
+    "text": "- Inability to speak full sentences - Bluish lips - Use of accessory muscles to breathe - No improvement after rescue inhaler - Peak flow <50% baseline Mild asthma episodes often improve with inhaler use, hydration, and avoiding triggers."
+  },
+  {
+    "doc_id": "asthma_wheezing.txt",
+    "chunk_id": "asthma_wheezing:overview:0",
+    "condition": "asthma_wheezing",
+    "section": "overview",
+    "text": "Asthma / Wheezing \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "asthma_wheezing.txt",
+    "chunk_id": "asthma_wheezing:emergency_signs:0",
+    "condition": "asthma_wheezing",
+    "section": "emergency_signs",
+    "text": "- Severe shortness of breath not relieved by inhaler. - Unable to speak full sentences. - Blue lips or fingernails. - Peak flow < 50% of normal (if known). URGENT: - Wheezing not improving after 2 inhaler rounds. - Persistent cough with shortness of breath. - Night-time awakenings due to breathing difficulty. ROUTINE: - Mild wheeze that improves with inhaler. - Occasional cough after exercise. GENERAL ADVICE: - Use rescue inhaler as directed. - Avoid smoke, dust, and allergens. - Seek escalation if symptoms worsen or inhaler is not relieving. SAFETY DISCLAIMER: Not medical advice. For emergencies, call local emergency services."
+  },
+  {
+    "doc_id": "back_pain.txt",
+    "chunk_id": "back_pain:overview:0",
+    "condition": "back_pain",
+    "section": "overview",
+    "text": "Back Pain \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "back_pain.txt",
+    "chunk_id": "back_pain:emergency_signs:0",
+    "condition": "back_pain",
+    "section": "emergency_signs",
+    "text": "- Sudden loss of bladder or bowel control. - Severe weakness or numbness in both legs. - Back pain with chest pain, fainting, or abdominal tearing sensation. - Back pain after high-impact trauma (accident, fall). URGENT: - Pain with leg numbness or tingling. - Severe pain not improving with rest. - Back pain with fever or unexplained weight loss. ROUTINE: - Muscle strain from lifting. - Mild stiffness improving with movement. GENERAL ADVICE: - Heat/ice, gentle stretching, short-term rest. - Avoid heavy lifting until symptoms improve. SAFETY DISCLAIMER: Not medical advice. For emergencies, call local emergency services."
+  },
+  {
+    "doc_id": "bleeding_trauma.txt",
+    "chunk_id": "bleeding_trauma:overview:0",
+    "condition": "bleeding_trauma",
+    "section": "overview",
+    "text": "Severe bleeding and trauma can be immediately life-threatening. Red-flag signs: - Heavy bleeding that does not stop with direct pressure - Blood soaking through large bandages or spurting from a wound - Signs of shock: pale, cold, clammy skin; rapid pulse; confusion; fainting - Significant head, chest, or abdominal injury - Obvious deformity of limb with severe pain - Difficulty breathing after chest or neck injury These situations require urgent emergency medical care. While waiting for emergency help: - Apply firm, direct pressure to bleeding wounds using clean cloth if available - Keep the person lying down if possible - Do not move the person unnecessarily if you suspect neck, back, or serious limb injuries Minor cuts and bruises that stop bleeding and have no signs of infection or deep tissue damage can often be managed with cleaning and basic first aid."
+  },
+  {
+    "doc_id": "burns.txt",
+    "chunk_id": "burns:overview:0",
+    "condition": "burns",
+    "section": "overview",
+    "text": "Burns \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "burns.txt",
+    "chunk_id": "burns:emergency_signs:0",
+    "condition": "burns",
+    "section": "emergency_signs",
+    "text": "- Large burns > 5\u201310% body surface area. - Burns on face, hands, groin, or airway. - Electrical or chemical burns. - Burns with difficulty breathing or soot around the mouth. URGENT: - Blistering burns. - Severe pain not responding to simple measures. - Signs of infection: redness, fever, pus. ROUTINE: - Minor small-area first-degree burns. GENERAL ADVICE: - Cool water for 10\u201320 minutes. - Do NOT apply ice directly or toothpaste. - Cover with clean, non-stick dressing. SAFETY DISCLAIMER: Not medical advice. Call emergency services for severe burns."
+  },
+  {
+    "doc_id": "chest_pain.txt",
+    "chunk_id": "chest_pain:overview:0",
+    "condition": "chest_pain",
+    "section": "overview",
+    "text": "Chest pain can indicate emergencies such as heart attack, pulmonary embolism, or aortic dissection. Immediate medical assessment is recommended when chest pain is accompanied by shortness of breath, sweating, nausea, dizziness, radiation to the arm or jaw, or occurs suddenly and severely."
+  },
+  {
+    "doc_id": "child_fever.txt",
+    "chunk_id": "child_fever:overview:0",
+    "condition": "child_fever",
+    "section": "overview",
+    "text": "Child Fever \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "child_fever.txt",
+    "chunk_id": "child_fever:emergency_signs:0",
+    "condition": "child_fever",
+    "section": "emergency_signs",
+    "text": "- Fever with difficulty breathing, blue lips, or severe lethargy. - Fever with seizures. - Child not waking or responding normally. - Fever in infants under 3 months (>38\u00b0C). URGENT: - Fever lasting more than 48 hours. - Fever with rash, stiff neck, or vomiting. - Fever with dehydration: dry mouth, no tears, poor urine output. ROUTINE: - Fever responding to paracetamol/ibuprofen. - Child active and drinking normally. GENERAL ADVICE: - Encourage hydration. - Use age-appropriate fever reducers. - Monitor for worsening symptoms. SAFETY DISCLAIMER: Not medical advice. For emergencies, call emergency services."
+  },
+  {
+    "doc_id": "cough_cold_flu.txt",
+    "chunk_id": "cough_cold_flu:overview:0",
+    "condition": "cough_cold_flu",
+    "section": "overview",
+    "text": "Cough / Cold / Flu \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "cough_cold_flu.txt",
+    "chunk_id": "cough_cold_flu:emergency_signs:0",
+    "condition": "cough_cold_flu",
+    "section": "emergency_signs",
+    "text": "- Severe shortness of breath or blue lips. - Chest pain with breathing. - Confusion, severe weakness, or inability to stay awake. - High fever not responding to medication. URGENT: - Persistent fever > 38.5\u00b0C for more than 48 hours. - Cough with wheezing or difficulty breathing. - Productive cough with blood. ROUTINE: - Mild runny nose, sore throat, or cough. - Symptoms improving with home care. GENERAL ADVICE: - Rest, hydration, and warm fluids. - Use paracetamol/ibuprofen for fever. - Seek care if symptoms worsen or last beyond 7\u201310 days. SAFETY DISCLAIMER: Not medical advice. For emergencies, call local emergency services."
+  },
+  {
+    "doc_id": "covid_flu_symptoms.txt",
+    "chunk_id": "covid_flu_symptoms:overview:0",
+    "condition": "covid_flu_symptoms",
+    "section": "overview",
+    "text": "Respiratory infections like COVID-19 and influenza can range from mild to severe. Common mild-to-moderate symptoms: - Fever, chills, muscle aches - Cough, sore throat, runny nose - Fatigue and headache - Loss of taste or smell (in some cases)"
+  },
+  {
+    "doc_id": "dehydration.txt",
+    "chunk_id": "dehydration:symptoms:0",
+    "condition": "dehydration",
+    "section": "symptoms",
+    "text": "sunken eyes, inability to urinate for 12 hours, or very dark urine. Severe dehydration is a medical"
+  },
+  {
+    "doc_id": "diabetic_emergency.txt",
+    "chunk_id": "diabetic_emergency:overview:0",
+    "condition": "diabetic_emergency",
+    "section": "overview",
+    "text": "Diabetic emergencies include very high blood sugar (hyperglycemia, possible ketoacidosis) and very low blood sugar (hypoglycemia). Red flags for high blood sugar emergencies: - Excessive thirst, frequent urination - Nausea, vomiting, abdominal pain - Deep or rapid breathing, fruity breath odor - Confusion, drowsiness, or unconsciousness Red flags for low blood sugar emergencies: - Shakiness, sweating, fast heartbeat - Confusion, irritability, or behavior changes - Difficulty speaking or coordinating movements - Seizures or loss of consciousness Any diabetic person with confusion, severe vomiting, breathing changes, or loss of consciousness needs emergency care. Mild low blood sugar (when the person is awake and able to swallow safely) may improve with quick sugar sources and follow-up carbohydrate per local medical guidance. Always follow the treatment plan provided by the person\u2019s diabetes care team."
+  },
+  {
+    "doc_id": "diarrhea_vomiting.txt",
+    "chunk_id": "diarrhea_vomiting:emergency_signs:0",
+    "condition": "diarrhea_vomiting",
+    "section": "emergency_signs",
+    "text": "is accompanied by severe abdominal pain, high fever, dehydration, or inability to keep fluids down. Infants, elderly, and immunocompromised individuals are at higher risk of complications."
+  },
+  {
+    "doc_id": "dizziness_fainting.txt",
+    "chunk_id": "dizziness_fainting:overview:0",
+    "condition": "dizziness_fainting",
+    "section": "overview",
+    "text": "Dizziness / Fainting \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "dizziness_fainting.txt",
+    "chunk_id": "dizziness_fainting:emergency_signs:0",
+    "condition": "dizziness_fainting",
+    "section": "emergency_signs",
+    "text": "- Sudden dizziness with weakness on one side or facial droop. - Chest pain, shortness of breath, or palpitations. - Repeated fainting episodes. - Dizziness after head injury. URGENT: - Dizziness with vomiting or dehydration. - Lightheadedness when standing that persists. - Fainting once with lingering symptoms. ROUTINE: - Mild dizziness from standing quickly. - Brief episodes from skipped meals or dehydration. GENERAL ADVICE: - Eat regularly, hydrate well. - Rise slowly from sitting or lying. SAFETY DISCLAIMER: Not medical advice. Call emergency services for severe symptoms."
+  },
+  {
+    "doc_id": "ear_pain.txt",
+    "chunk_id": "ear_pain:overview:0",
+    "condition": "ear_pain",
+    "section": "overview",
+    "text": "Ear Pain \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "ear_pain.txt",
+    "chunk_id": "ear_pain:emergency_signs:0",
+    "condition": "ear_pain",
+    "section": "emergency_signs",
+    "text": "- Sudden hearing loss. - Ear pain with facial weakness or drooping. - Severe pain after head injury. URGENT: - Ear pain with fever. - Pus-like ear discharge. - Pain with dizziness or vomiting. ROUTINE: - Mild discomfort after swimming or altitude changes. - Ear fullness or popping sensations. GENERAL ADVICE: - Warm compress may help reduce pain. - Avoid inserting cotton swabs or objects into ear. - If symptoms last more than 48 hours, seek care. SAFETY DISCLAIMER: Not medical advice. Seek medical evaluation for severe symptoms."
+  },
+  {
+    "doc_id": "eye_emergency.txt",
+    "chunk_id": "eye_emergency:overview:0",
+    "condition": "eye_emergency",
+    "section": "overview",
+    "text": "Eye symptoms can threaten sight if not treated promptly. Red-flag eye symptoms: - Sudden loss of vision in one or both eyes - Sudden severe eye pain or headache around the eye - Seeing flashes of light, a curtain over vision, or a large number of new floaters - Chemical splash in the eye - Penetrating eye injury or foreign body stuck in the eye - Marked redness with decreased vision and severe pain These signs may indicate retinal detachment, acute glaucoma, serious infection, or trauma and need urgent eye specialist assessment. Mild symptoms such as minor irritation, mild redness without vision change, or dry eyes can often be managed with lubricating drops and avoiding irritants, but persistent or worsening symptoms should still be evaluated."
+  },
+  {
+    "doc_id": "eye_red_pain.txt",
+    "chunk_id": "eye_red_pain:overview:0",
+    "condition": "eye_red_pain",
+    "section": "overview",
+    "text": "Red Eye / Eye Pain \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "eye_red_pain.txt",
+    "chunk_id": "eye_red_pain:emergency_signs:0",
+    "condition": "eye_red_pain",
+    "section": "emergency_signs",
+    "text": "- Sudden vision loss or severe eye pain. - Chemical exposure to eyes. - Eye trauma with bleeding or visible deformity. URGENT: - Red eye with light sensitivity. - Painful eye with blurred vision. - Discharge from the eye with fever. - Contact lens wearers with eye pain. ROUTINE: - Mild redness from allergies. - Dry eye symptoms improving with rest. GENERAL ADVICE: - Avoid rubbing eyes. - Flush eyes with clean water if irritated. - Remove contact lenses during symptoms. SAFETY DISCLAIMER: Not medical advice. For severe eye symptoms, seek emergency care."
+  },
+  {
+    "doc_id": "fever.txt",
+    "chunk_id": "fever:overview:0",
+    "condition": "fever",
+    "section": "overview",
+    "text": "Fever lasting more than 48 hours, or fever accompanied by stiff neck, rash, confusion, or trouble breathing, may indicate a serious infection. Medical evaluation is recommended in such cases."
+  },
+  {
+    "doc_id": "head_injury.txt",
+    "chunk_id": "head_injury:overview:0",
+    "condition": "head_injury",
+    "section": "overview",
+    "text": "Head injuries can be minor or life-threatening."
+  },
+  {
+    "doc_id": "head_injury.txt",
+    "chunk_id": "head_injury:emergency_signs:0",
+    "condition": "head_injury",
+    "section": "emergency_signs",
+    "text": "- Loss of consciousness at any time - Repeated vomiting - Seizures or convulsions - Severe or worsening headache - Weakness, numbness, or difficulty speaking - Confusion, agitation, or unusual behavior - Unequal pupil size or vision changes - Clear fluid or blood leaking from nose or ears These symptoms require urgent medical evaluation to rule out serious brain injury or bleeding. Mild head injuries (no loss of consciousness, mild headache, no vomiting, acting normally) may be observed at home with: - Rest - Avoiding high-risk activities - Monitoring for changes in behavior or new symptoms Any deterioration after a head injury should prompt immediate medical assessment."
+  },
+  {
+    "doc_id": "headache.txt",
+    "chunk_id": "headache:overview:0",
+    "condition": "headache",
+    "section": "overview",
+    "text": "Headache guidelines: - Overview: - Headache is pain located in any region of the head (forehead, temples, back of head, or around the eyes). - Most headaches are benign (tension-type or migraine), but some can indicate serious conditions. - Common mild / self-care headache: - Bilateral, dull, pressure-like pain related to stress, muscle tension, or long screen time. - No fever, stiff neck, confusion, speech or vision problems, weakness, or recent head injury. - Home care: rest in a quiet dark room, hydration, avoid triggers (bright light, loud noise), simple over-the-counter pain relief if not contraindicated, and monitor. - Red flag / emergency headache (\u201cthunderclap\u201d or serious signs): - Sudden, severe \u201cworst headache of life\u201d that peaks within seconds to a minute. - Headache with: - Stiff neck, high fever, or rash. - Confusion, difficulty speaking, difficulty walking, or seizures. - Weakness or numbness on one side of the body. - Vision loss or double vision. - Recent head injury, fall, or blow to the head. - Headache in pregnancy with visual changes, high blood pressure, or severe swelling. - Action: call emergency services or go to the nearest emergency department. - Urgent but not 911-level (see a doctor within hours to 1 day): - New or different headache in someone over 50. - Headache that is gradually worsening over days and not responding to usual treatment. - Headache with persistent vomiting. - Headache triggered by exertion, coughing, or sexual activity. - Headache in someone with a history of cancer, blood clotting problems, or on blood thinners. - Routine / non-urgent: - Recurrent similar headaches diagnosed previously as migraine or tension-type, with familiar pattern and no new red-flag features. - Action: discuss with primary care or specialist for prevention, trigger management, and medication adjustment if needed. - General advice: -"
+  },
+  {
+    "doc_id": "headache.txt",
+    "chunk_id": "headache:overview:1",
+    "condition": "headache",
+    "section": "overview",
+    "text": "tension-type, with familiar pattern and no new red-flag features. - Action: discuss with primary care or specialist for prevention, trigger management, and medication adjustment if needed. - General advice: - Anyone with red-flag features should not delay emergency evaluation. - This guidance is for information only and does not replace a professional medical assessment. - Sources: - Based on high-level summaries from major clinical guidelines (e.g., WHO, national neurology and emergency medicine societies)."
+  },
+  {
+    "doc_id": "headache_severe.txt",
+    "chunk_id": "headache_severe:overview:0",
+    "condition": "headache_severe",
+    "section": "overview",
+    "text": "A severe headache with stiff neck, fever, confusion, blurred vision, weakness on one side, difficulty speaking, or the worst headache of life may indicate meningitis, stroke, or aneurysm. Immediate medical assessment is required."
+  },
+  {
+    "doc_id": "hypertension_crisis.txt",
+    "chunk_id": "hypertension_crisis:overview:0",
+    "condition": "hypertension_crisis",
+    "section": "overview",
+    "text": "A hypertensive crisis occurs when blood pressure spikes dangerously high (typically >180/120)."
+  },
+  {
+    "doc_id": "hypertension_crisis.txt",
+    "chunk_id": "hypertension_crisis:symptoms:0",
+    "condition": "hypertension_crisis",
+    "section": "symptoms",
+    "text": "This may indicate organ damage (heart, kidneys, brain) requiring urgent medical evaluation. Mild BP elevation without symptoms may be monitored and managed with medication adjustments."
+  },
+  {
+    "doc_id": "injury_fracture.txt",
+    "chunk_id": "injury_fracture:overview:0",
+    "condition": "injury_fracture",
+    "section": "overview",
+    "text": "Injury / Fracture \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "injury_fracture.txt",
+    "chunk_id": "injury_fracture:emergency_signs:0",
+    "condition": "injury_fracture",
+    "section": "emergency_signs",
+    "text": "- Visible bone deformity or open fracture. - Inability to move or feel the limb. - Severe bleeding that does not stop with pressure. - Neck or spine injury after trauma. URGENT: - Painful swelling after a fall. - Suspected minor fracture without deformity. - Limited range of motion due to pain. ROUTINE: - Mild sprains with minimal swelling. - Bruises improving with time. GENERAL ADVICE: - Rest, ice, compression, and elevation (RICE). - Avoid putting weight on injured areas. - Seek care if swelling or pain worsens. SAFETY DISCLAIMER: Not medical advice. For emergencies call local emergency services."
+  },
+  {
+    "doc_id": "joint_pain_swelling.txt",
+    "chunk_id": "joint_pain_swelling:overview:0",
+    "condition": "joint_pain_swelling",
+    "section": "overview",
+    "text": "Joint Pain / Swelling \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "joint_pain_swelling.txt",
+    "chunk_id": "joint_pain_swelling:emergency_signs:0",
+    "condition": "joint_pain_swelling",
+    "section": "emergency_signs",
+    "text": "- Sudden severe joint pain with fever and redness (possible septic joint). - Joint injury with obvious deformity or inability to bear weight. URGENT: - Swelling with warmth and stiffness. - Pain not improving for several days. - Joint pain with rash or recent infection. ROUTINE: - Mild strain from overuse. - Temporary stiffness after activity. GENERAL ADVICE: - Rest, ice, elevation. - Avoid overuse until pain improves. - Gentle stretching once pain decreases. SAFETY DISCLAIMER: Not medical advice. Seek emergency care for severe joint symptoms."
+  },
+  {
+    "doc_id": "mental_health_crisis.txt",
+    "chunk_id": "mental_health_crisis:overview:0",
+    "condition": "mental_health_crisis",
+    "section": "overview",
+    "text": "Mental Health Crisis \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "mental_health_crisis.txt",
+    "chunk_id": "mental_health_crisis:emergency_signs:0",
+    "condition": "mental_health_crisis",
+    "section": "emergency_signs",
+    "text": "- Thoughts of self-harm or suicide. - Threats of harm to others. - Severe confusion, hallucinations, or inability to care for oneself. - Sudden behavioral changes with violence or agitation. URGENT: - Persistent severe anxiety or panic interfering with daily tasks. - Depression symptoms worsening rapidly. - Insomnia for several days with functional decline. ROUTINE: - Mild anxiety, low mood, or stress-related symptoms. - Difficulty concentrating or emotional distress without safety concerns. GENERAL ADVICE: - Talk to a trusted person and seek support. - Practice grounding techniques for anxiety. - Follow up with a mental health professional if symptoms persist. SAFETY DISCLAIMER: Not medical advice. If there is any risk of harm to self or others, call emergency services immediately."
+  },
+  {
+    "doc_id": "migraine.txt",
+    "chunk_id": "migraine:overview:0",
+    "condition": "migraine",
+    "section": "overview",
+    "text": "Migraines are severe, throbbing headaches often accompanied by nausea, sensitivity to light or sound, and visual aura."
+  },
+  {
+    "doc_id": "migraine.txt",
+    "chunk_id": "migraine:emergency_signs:0",
+    "condition": "migraine",
+    "section": "emergency_signs",
+    "text": "- \u201cWorst headache of life\u201d - Sudden onset headache - Headache with fever, neck stiffness, confusion, vision changes, or weakness Typical migraines improve with rest in a dark room, hydration, and prescribed medications."
+  },
+  {
+    "doc_id": "palpitations.txt",
+    "chunk_id": "palpitations:overview:0",
+    "condition": "palpitations",
+    "section": "overview",
+    "text": "Palpitations \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "palpitations.txt",
+    "chunk_id": "palpitations:emergency_signs:0",
+    "condition": "palpitations",
+    "section": "emergency_signs",
+    "text": "- Palpitations with chest pain, fainting, or severe shortness of breath. - Heart racing above 150 bpm at rest. - Irregular heartbeat following drug use or stimulant ingestion. URGENT: - Palpitations lasting more than 30 minutes. - Palpitations with dizziness or near-fainting. - New irregular heartbeat without severe symptoms. ROUTINE: - Brief episodes lasting seconds and resolving spontaneously. - Palpitations after caffeine, anxiety, or stress. GENERAL ADVICE: - Avoid caffeine, nicotine, and stimulants. - Monitor heart rate when possible. - Seek urgent care if symptoms worsen or persist. SAFETY DISCLAIMER: Not medical advice. For emergencies, call local emergency services immediately."
+  },
+  {
+    "doc_id": "poisoning_overdose.txt",
+    "chunk_id": "poisoning_overdose:overview:0",
+    "condition": "poisoning_overdose",
+    "section": "overview",
+    "text": "Poisoning / Overdose \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "poisoning_overdose.txt",
+    "chunk_id": "poisoning_overdose:emergency_signs:0",
+    "condition": "poisoning_overdose",
+    "section": "emergency_signs",
+    "text": "- Suspected overdose of medication, alcohol, or drugs. - Ingestion of chemicals, cleaners, pesticides, or unknown substances. - Difficulty breathing, confusion, seizures, or unconsciousness. - Severe vomiting after ingestion of spoiled food or toxins. URGENT: - Mild abdominal pain or nausea after accidental ingestion. - Exposure to fumes with persistent cough or eye irritation. ROUTINE: - Very small accidental ingestion with no symptoms (e.g., child tastes non-toxic item). GENERAL ADVICE: - Do NOT induce vomiting unless instructed by professionals. - Rinse mouth with water after accidental ingestion. - Contact poison control if available in your region. SAFETY DISCLAIMER: Not medical advice. Poisoning is often an emergency. Call emergency services immediately."
+  },
+  {
+    "doc_id": "pregnancy_bleeding.txt",
+    "chunk_id": "pregnancy_bleeding:overview:0",
+    "condition": "pregnancy_bleeding",
+    "section": "overview",
+    "text": "Pregnancy Bleeding \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "pregnancy_bleeding.txt",
+    "chunk_id": "pregnancy_bleeding:emergency_signs:0",
+    "condition": "pregnancy_bleeding",
+    "section": "emergency_signs",
+    "text": "- Heavy bleeding soaking pads within 1 hour. - Bleeding with severe abdominal pain or dizziness. - Bleeding after trauma or accident. URGENT: - Light bleeding with cramping. - Bleeding after intercourse. - Moderate bleeding without dizziness. ROUTINE: - Mild spotting early in pregnancy without pain. GENERAL ADVICE: - Rest and avoid strenuous activity. - Seek care if bleeding increases or pain develops. SAFETY DISCLAIMER: Not medical advice. For emergencies call emergency services."
+  },
+  {
+    "doc_id": "sepsis_warning_signs.txt",
+    "chunk_id": "sepsis_warning_signs:overview:0",
+    "condition": "sepsis_warning_signs",
+    "section": "overview",
+    "text": "Sepsis is a life-threatening reaction to infection. Warning signs may include: - Fever or very low temperature with chills - Rapid heart rate and rapid breathing - Extreme weakness or inability to stand - Confusion, disorientation, or feeling \u201cout of it\u201d - Very low urine output or dark, concentrated urine - Pale, clammy, or mottled skin People at higher risk include older adults, very young children, and those with chronic illnesses or weak immune systems. Suspected sepsis is always an emergency. Urgent medical assessment is needed if a person with infection develops confusion, low blood pressure, or difficulty breathing. Milder infections without these signs can often be managed with oral fluids, rest, and prescribed medications, but should be monitored closely."
+  },
+  {
+    "doc_id": "shortness_of_breath.txt",
+    "chunk_id": "shortness_of_breath:overview:0",
+    "condition": "shortness_of_breath",
+    "section": "overview",
+    "text": "Shortness of breath that comes on suddenly or occurs with chest pain, fainting, swelling of legs, or severe coughing may indicate a respiratory or cardiac emergency and requires immediate assessment."
+  },
+  {
+    "doc_id": "skin_rash.txt",
+    "chunk_id": "skin_rash:overview:0",
+    "condition": "skin_rash",
+    "section": "overview",
+    "text": "Skin Rash \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "skin_rash.txt",
+    "chunk_id": "skin_rash:emergency_signs:0",
+    "condition": "skin_rash",
+    "section": "emergency_signs",
+    "text": "- Rash with difficulty breathing, facial swelling, or throat tightness. - Purple spots that do not blanch (possible meningococcal infection). - Rapidly spreading rash with fever. URGENT: - Painful rash with blisters or pus. - Rash with fever lasting more than 24 hours. - Suspicion of shingles (burning pain + band-like rash). ROUTINE: - Mild itchy rash without fever. - Red patches after new soap, lotion, or detergent. GENERAL ADVICE: - Avoid scratching and use gentle skin care. - Antihistamines may reduce itching. - Seek urgent care if rash spreads quickly or new symptoms appear. SAFETY DISCLAIMER: Not medical advice. Seek medical care for severe rashes."
+  },
+  {
+    "doc_id": "stroke_signs.txt",
+    "chunk_id": "stroke_signs:overview:0",
+    "condition": "stroke_signs",
+    "section": "overview",
+    "text": "Stroke Signs \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "stroke_signs.txt",
+    "chunk_id": "stroke_signs:emergency_signs:0",
+    "condition": "stroke_signs",
+    "section": "emergency_signs",
+    "text": "- Facial droop. - Arm weakness. - Slurred or unclear speech. - Sudden severe headache with vomiting or confusion. - Sudden vision loss. - Sudden inability to walk, severe imbalance, or collapse. URGENT: - Transient weakness lasting less than 1 hour (possible TIA). ROUTINE: - No routine category. All stroke-like symptoms require evaluation. GENERAL ADVICE: - Time is critical. Stroke symptoms are a medical emergency. SAFETY DISCLAIMER: Not medical advice. Call emergency services immediately for stroke signs."
+  },
+  {
+    "doc_id": "urinary_symptoms.txt",
+    "chunk_id": "urinary_symptoms:overview:0",
+    "condition": "urinary_symptoms",
+    "section": "overview",
+    "text": "Urinary Symptoms \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "urinary_symptoms.txt",
+    "chunk_id": "urinary_symptoms:emergency_signs:0",
+    "condition": "urinary_symptoms",
+    "section": "emergency_signs",
+    "text": "- Severe flank pain with fever and chills (possible kidney infection). - Inability to urinate with severe lower abdominal pain. - Blood in urine with large clots. - Urinary symptoms with confusion (especially in elderly patients). URGENT: - Painful urination with fever. - Cloudy or foul-smelling urine with back pain. - Frequent urination with pelvic pain. - Visible blood in urine (no clots). ROUTINE: - Mild burning on urination without fever. - Frequent urge to pee but no pain or fever. GENERAL ADVICE: - Drink plenty of fluids. - Avoid caffeine and alcohol during symptoms. - Seek care sooner if fever, back pain, or worsening symptoms develop. SAFETY DISCLAIMER: Not medical advice. For emergencies call local emergency services."
+  },
+  {
+    "doc_id": "urinary_tract_infection.txt",
+    "chunk_id": "urinary_tract_infection:overview:0",
+    "condition": "urinary_tract_infection",
+    "section": "overview",
+    "text": "UTIs commonly cause burning during urination, frequent urge to urinate, and lower abdominal discomfort. Red flags: - Fever - Back/flank pain - Nausea and vomiting These may indicate kidney infection (pyelonephritis), requiring prompt treatment. Uncomplicated UTIs in adults usually improve with prescribed antibiotics and hydration."
+  },
+  {
+    "doc_id": "vomiting_diarrhea.txt",
+    "chunk_id": "vomiting_diarrhea:overview:0",
+    "condition": "vomiting_diarrhea",
+    "section": "overview",
+    "text": "Vomiting / Diarrhea \u2014 Triage Guidelines"
+  },
+  {
+    "doc_id": "vomiting_diarrhea.txt",
+    "chunk_id": "vomiting_diarrhea:emergency_signs:0",
+    "condition": "vomiting_diarrhea",
+    "section": "emergency_signs",
+    "text": "- Signs of severe dehydration: no urine, dizziness, confusion. - Vomiting blood or black stool. - Severe abdominal pain with vomiting. - Symptoms after suspected poisoning. URGENT: - Persistent vomiting for more than 12 hours. - Diarrhea lasting more than 48 hours with fever. - Bloody diarrhea. ROUTINE: - Mild food-related stomach upset. - Occasional loose stools with no red flags. GENERAL ADVICE: - Hydrate with ORS, avoid heavy foods. - Seek care sooner if symptoms worsen. SAFETY DISCLAIMER: Not medical advice. For emergencies, call emergency services."
+  }
+]
