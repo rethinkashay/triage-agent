@@ -20,7 +20,11 @@ except Exception:
     openai = None
     _HAS_OPENAI = False
 
-DEFAULT_GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+DEFAULT_GEMINI_MODEL = os.getenv(
+    "GEMINI_MODEL",
+    "models/gemini-flash-latest"
+)
+
 DEFAULT_OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
 # Allow more room for the JSON so it is not truncated mid-response.
